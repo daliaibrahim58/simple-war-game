@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f6f6;
+}
+
+body, h2, button {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap; /* Prevents wrapping */
+    width: 100%; /* Ensures box takes full width */
+}
+
+.person {
+    width: 45%;
+    height: 45%;
+    background-color: #fff;
+    border: 1px solid #000;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.person .health {
+    background-color: #888;
+    height: 30px;
+}
+
+.person .health span {
+    display: block;
+    width: 100%;
+    background-color: green;
+    height: 100%;
+}
+
+.person h2 {
+    margin: 10px 0;
+}
+
+.person img {
+    width: 300px; /* Ensures the image takes up 50% of its container */
+    height: 300px;
+    display: block; /* Centers the image horizontally if it's inline */
+    margin: 10px auto; /* Centers the image horizontally */
+    overflow: hidden;
+}
+
+.person button {
+    margin: 20px 5px;
+    padding: 5px;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    font-size: 17px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.person button.attack:hover {
+    opacity: .84;
+    background-color: red;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+.person button.make-health:hover {
+    opacity: .84;
+    background-color: green;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+.person #Narotoo-not-alive,
+.person #Sasakii-not-alive{
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+
